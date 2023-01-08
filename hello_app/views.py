@@ -10,14 +10,19 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/about/")
-def about():
-    return render_template("about.html")
+@app.route("/secure/")
+def secure():
+    return render_template("secure.html")
 
 
-@app.route("/contact/")
-def contact():
-    return render_template("contact.html")
+@app.route("/login/")
+def login():
+    return render_template("login.html")
+
+
+@app.route("/logout/")
+def logout():
+    return render_template("logout.html")
 
 
 @app.route("/hello/")
